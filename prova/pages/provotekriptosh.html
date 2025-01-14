@@ -14,7 +14,7 @@
 			<!-- ################################################################################################ -->
 			<div class="fl_left">
 				<ul class="nospace">
-					<li><i class="fa fa-phone"></i> +355 69 463 38 35</li>
+					<li><i class="fa fa-phone"></i> +355 69 463 3835</li>
 					<li><i class="fa fa-envelope-o"></i> info@cryptoLearn.com</li>
 				</ul>
 			</div>
@@ -65,7 +65,7 @@
 			<!-- ################################################################################################ -->
 		</header>
 	</div>
-	<div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/2.jpg');">
+	<div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/2.jpg'); background-position:center;">
 		<div id="breadcrumb" class="hoc clear">
 			<!-- ################################################################################################ -->
 			<ul>
@@ -102,19 +102,28 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../layout/styles/provotekriptosh.css" rel="stylesheet">
-	<script src="../layout/scripts/provotekriptosh.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 
 <body>
 
 	<div class="center top-relative">
+		<div class="alg-selection">
+			<label for="algorithm">Zgjidhni Algoritmin: </label>
+			<select id="algorithm">
+				<option value="AES">AES</option>
+				<option value="DES">DES</option>
+				<option value="TripleDES">TripleDES</option>
+				<option value="RC4">RC4</option>
+			</select>
+		</div>
+	
 		<div class="content voilet1">
-			<span>Vendosni nje password per procesin e kriptimit</span>
-			<input class="f15pt" type="password" id="passcode" placeholder="password" />
+			<span>Vendosni një çelës si input për algoritmin AES</span>
+			<input class="f15pt" type="password" id="passcode" placeholder="Your Key ... " />
 		</div>
 		<div class="content voilet2">
-			<span>Vendosni tekstin ketu..</span>
+			<span>Vendosni tekstin këtu ...</span>
 
 			<textarea id="originalContent" class="permbajtje"></textarea>
 		</div>
@@ -126,14 +135,11 @@
 			<span>Forma e Dekriptuar</span>
 			<textarea id="decryptedContent" class="permbajtje3" classreadonly></textarea>
 		</div>
-		<button class="encrypt"
-			onclick="webdevencrypt.setEncrypt('originalContent','encryptedContent','passcode')">Encrypt</button>
-		<button class="encrypt"
-			onclick="webdevencrypt.setDecrypt('originalContent','decryptedContent','passcode')">Decrypt</button>
-
+		<button class="encrypt" onclick="encryptText()">Encrypt</button>
+		<button class="encrypt" onclick="decryptText()">Decrypt</button>
 	</div>
 
-
+	<script src="../layout/scripts/provotekriptosh.js"></script>
 </body>
 
 </html>

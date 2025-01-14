@@ -6,7 +6,7 @@ body {
     rgba(44, 56, 85, 0.5),
     rgba(100, 125, 187, 0.5)
   ),
-  url('/prova/images/demo/backgrounds/login.png'); 
+  url('../../images/demo/backgrounds/login.png'); 
   
   background-position: center; 
   background-size: cover;
