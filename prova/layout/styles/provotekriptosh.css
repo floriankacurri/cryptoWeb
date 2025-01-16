@@ -22,7 +22,7 @@ textarea{
 .f15pt {
     font-size: 15pt;
     font-style: #020202;
-    background-color: #166773;
+    background-color: #b6dee3;
 }
 .content {
     background: #BFDF8F;
@@ -32,15 +32,16 @@ textarea{
     width: 100%;
 }
 .voilet0 {
-    background-color:#9daf92;
+    background-color:#0d355e;
 }
 .permbajtje{
-   background-color: #166773; 
+   background-color: #ccdadc; 
+   color: gray;
 }
 
 
 .voilet1 {
-    background-color: #9daf92;
+    background-color: #0d355e;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -50,21 +51,26 @@ textarea{
     width: 40%;
 }
 .voilet1 input::placeholder {
-    color: rgb(129, 128, 128);
+    color: #8d8b8b;
     text-align: center;
 }
 .permbajtje1{
    background-color: #166773; 
+   color: gray;
 }
 
 .voilet2 {
-    background-color: #389FB9;
+    background-color: #04404fa6;
 }
 .permbajtje2{
-   background-color: #166773; 
+   background-color: #ccdadc; 
+   color: gray;
+
 }
 .permbajtje3{
-    background-color: #166773;
+    background-color: #ccdadc;
+    color: gray;
+
 }
 
 textarea {
@@ -72,18 +78,20 @@ textarea {
     min-height: 100px;
 }
 .encrypt {
-    font-size: 24pt;
-    background-color: grey;
-    border-radius: 3px;
+    font-size: 23pt;
+    font-weight: 100;
+    background-color: #0d355ec7;
+    border-radius: 10px;
     border: 1px solid #27484D;
-    color: #020202;
+    color: white;
     padding: 7px;
     margin: 5px;
+    margin-right: 0;
     float: right;
     cursor: pointer;
 }
 .encrypt:hover {
-    background-color: #A6C17C;
+    background-color: #3d5c7d99;
 }
  
 .center {
@@ -95,6 +103,7 @@ textarea {
     padding: 6px;
     border: 0px;
     outline: none;
+    color: darkslategray;
 }
 #passcode:focus {
     border: 2px solid #389FB9;
